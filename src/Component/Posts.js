@@ -56,11 +56,11 @@ const Posts = () => {
           onChange={(e) => handleFilter(e)}
         />
 
-        {posts.map((post) => {
+        {posts.map((item) => {
           return (
-            <ul key={post.id}>
+            <ul key={item.id}>
               <li>
-                <Link to={`/post/${post.id}`}> {post.title}</Link>
+                <Link to={`/post/${item.id}`}> {item.title}</Link>
               </li>
             </ul>
           );
