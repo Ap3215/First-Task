@@ -16,12 +16,12 @@ const Postdetails = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/posts")
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         const newProduct = res.data.find((item) => item.id === parseInt(id));
         setProduct(newProduct);
       })
-      .then((error) => {
-        console.log(error);
+      .then((err) => {
+        console.log(err);
       });
   };
 

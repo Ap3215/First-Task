@@ -42,6 +42,9 @@
   color: blue;
   cursor: pointer;
 }
+img {
+  height: 2.2rem;
+}
 
 input {
   margin: 2rem !important;

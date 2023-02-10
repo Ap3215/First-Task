@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <header class="header">
       <a Link="">
-        <img src="Image/omnifood-logo" alt="" />
+        <img src="../Image/omnifood-logo.png" alt="" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
