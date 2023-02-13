@@ -1,0 +1,26 @@
+.post-details {
+    margin: 4rem;
+}
+
+.post-details__card {
+    width: 30rem;
+}
+
+.card-body {
+    margin: 1rem;
+}
+
+/* .h5 {
+    font-size: 1.8rem !important;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-weight: 500 !important;
+} */
+
+.card-text {
+    font-size: 1.4rem;
+    text-align: left;
+    padding-top: 1rem;
+    font-family: sans-serif;
+    line-height: 1.4;
+}
