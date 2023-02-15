@@ -1,0 +1,10 @@
+.heading_container {
+  margin: 4rem auto;
+  text-align: center;
+}
+.heading_title {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}

@@ -1,23 +1,26 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Imgpage from "./Component/Imgpage";
-import Navbar from "./Component/Navbar";
-import Postdetails from "./Component/Postdetails";
+
+import Images from "./Component/Images";
+import Header from "./Component/Header";
+import PostDetails from "./Component/PostDetails";
 import Posts from "./Component/Posts";
 
-function App() {
+import "./App.css";
+
+const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+      <Header />
       <Routes>
-        <Route path="/" />
-        <Route path="/posts" element={<Posts />} />
-        <Route path="/post/:id" element={<Postdetails />} />
-        <Route path="/images" element={<Imgpage />} />
+        <Route path="/posts">
+          <Route index element={<Posts />} />
+          <Route path=":id" element={<PostDetails />} />
+        </Route>
+        <Route path="/images" element={<Images />} />
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
